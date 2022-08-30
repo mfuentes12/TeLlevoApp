@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><img src="../../../assets/img/logoApp.svg" alt=""></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <div id="container">
+    <ion-item>
+      <ion-label position="floating">Nombre de usuario</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <br>
+    <ion-button color="primary" [routerLink]="['/home']" (click)="presentAlert()">Recuperar</ion-button>
+    <br>
+    <ion-button color="primary" [routerLink]="['/home']">Volver</ion-button>
+  </div>
+</ion-content>

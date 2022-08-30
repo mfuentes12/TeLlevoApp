@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <img src="../../../assets/img/logoApp.svg" alt="">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <ion-list>
+    <ion-item *ngFor="let conductor of lista_cond">
+      <ion-label>
+        <h2>{{conductor.nombreC}}</h2>
+        <h2>{{conductor.patenteA}}</h2>
+        <h2>{{conductor.modeloA}}</h2>
+        <h2>{{conductor.marcaA}}</h2>
+        <h2>{{conductor.capacidadA}}</h2>
+      </ion-label>
+      <ion-button color="success" [routerLink]="['/rutas']">Ver ruta</ion-button>
+      <ion-icon name="car-sport-outline"></ion-icon>
+    </ion-item>
+    <br>
+    <ion-button color="primary" [routerLink]="['/home']">Volver</ion-button>
+  </ion-list>
+</ion-content>

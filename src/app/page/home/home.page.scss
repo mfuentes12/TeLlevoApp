@@ -25,3 +25,15 @@
 #container a {
   text-decoration: none;
 }
+
+ion-content.background{
+  --background: url(../../../assets/img/duoc.png) 0/100% 100%;
+}
+
+ion-header.fondoTitulo{
+  --background-color: #2f3c3300;
+}
+
+img{
+  width: 60%;
+}

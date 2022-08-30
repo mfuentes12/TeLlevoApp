@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><img src="../../../assets/img/logoApp.svg" alt=""></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <div id="container">
+    <br>
+    <ion-item>
+      <ion-label position="floating">Nombre de usuario</ion-label>
+      <ion-input [(ngModel)]="nombreCond"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input [(ngModel)]="pass" type="password"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label position="floating">Patente</ion-label>
+      <ion-input [(ngModel)]="patenteA"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label position="floating">Marca del auto</ion-label>
+      <ion-input [(ngModel)]="marcaA"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label position="floating">Modelo del auto</ion-label>
+      <ion-input [(ngModel)]="modeloA"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label position="floating">Color del auto</ion-label>
+      <ion-input [(ngModel)]="colorA"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label position="floating">Año del auto</ion-label>
+      <ion-input [(ngModel)]="anioA"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label position="floating">Capacidad del auto</ion-label>
+      <ion-input [(ngModel)]="capacidadA"></ion-input>
+    </ion-item>
+    <br>
+    <ion-button color="primary" [routerLink]="['/login-conductor']" (click)="registrarC()" (click)="presentAlert()">Registrarse</ion-button>
+    <br>
+    <ion-button color="primary" [routerLink]="['/login-conductor']">Volver</ion-button>
+  </div>
+</ion-content>
